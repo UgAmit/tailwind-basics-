@@ -1,0 +1,16 @@
+{
+  "name": "tailwind-css-setup",
+  "version": "1.0.0",
+  "description": "Tailwind CSS setup with examples",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "keywords": ["tailwind", "css", "frontend"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.0"
+  }
+} 

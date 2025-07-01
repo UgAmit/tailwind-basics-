@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS Examples</title>
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-6">
+                <div class="text-xl font-bold text-gray-800">Tailwind CSS</div>
+                <div class="space-x-4">
+                    <a href="#components" class="text-gray-600 hover:text-blue-600 transition duration-200">Components</a>
+                    <a href="#examples" class="text-gray-600 hover:text-blue-600 transition duration-200">Examples</a>
+                    <a href="#utilities" class="text-gray-600 hover:text-blue-600 transition duration-200">Utilities</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h1 class="text-5xl font-bold mb-6">Tailwind CSS Examples</h1>
+            <p class="text-xl mb-8 opacity-90">Beautiful, responsive designs with utility-first CSS framework</p>
+            <button class="btn-primary text-lg px-8 py-3">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Components Section -->
+    <section id="components" class="py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Components</h2>
+            
+            <!-- Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="card">
+                    <div class="w-12 h-12 bg-blue-500 rounded-lg mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Fast Development</h3>
+                    <p class="text-gray-600">Build quickly with pre-built utility classes</p>
+                </div>
+                
+                <div class="card">
+                    <div class="w-12 h-12 bg-green-500 rounded-lg mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Responsive Design</h3>
+                    <p class="text-gray-600">Mobile-first responsive design out of the box</p>
+                </div>
+                
+                <div class="card">
+                    <div class="w-12 h-12 bg-purple-500 rounded-lg mb-4 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM21 5a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a4 4 0 004 4h4a2 2 0 002-2V5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Customizable</h3>
+                    <p class="text-gray-600">Easily customize and extend with your own designs</p>
+                </div>
+            </div>
+
+            <!-- Button Examples -->
+            <div class="bg-white rounded-lg p-8 shadow-md">
+                <h3 class="text-2xl font-semibold mb-6">Button Examples</h3>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded transition duration-200">Primary</button>
+                    <button class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded transition duration-200">Secondary</button>
+                    <button class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded transition duration-200">Success</button>
+                    <button class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded transition duration-200">Danger</button>
+                    <button class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-2 rounded transition duration-200">Outline</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Utilities Section -->
+    <section id="utilities" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Utility Classes</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Spacing -->
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Spacing</h3>
+                    <div class="space-y-2">
+                        <div class="bg-blue-200 p-2 rounded">p-2 (padding)</div>
+                        <div class="bg-green-200 m-4 p-2 rounded">m-4 (margin)</div>
+                        <div class="bg-yellow-200 px-6 py-3 rounded">px-6 py-3</div>
+                    </div>
+                </div>
+
+                <!-- Colors -->
+                <div class="bg-white rounded-lg p-6 shadow-md">
+                    <h3 class="text-xl font-semibold mb-4">Colors</h3>
+                    <div class="grid grid-cols-4 gap-2">
+                        <div class="bg-red-500 h-8 rounded"></div>
+                        <div class="bg-blue-500 h-8 rounded"></div>
+                        <div class="bg-green-500 h-8 rounded"></div>
+                        <div class="bg-yellow-500 h-8 rounded"></div>
+                        <div class="bg-purple-500 h-8 rounded"></div>
+                        <div class="bg-pink-500 h-8 rounded"></div>
+                        <div class="bg-indigo-500 h-8 rounded"></div>
+                        <div class="bg-gray-500 h-8 rounded"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Tailwind CSS Examples. Built with ❤️ using Tailwind CSS</p>
+        </div>
+    </footer>
+</body>
+</html> 
